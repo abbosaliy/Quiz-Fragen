@@ -66,3 +66,26 @@ body {
 .footer button:active {
   background-color: rgba(11, 145, 145, 0.616);
 }
+
+@media (max-width:600px){
+  .quiz-title {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
+  .answer {
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    box-shadow: rgb(0, 0, 0, 0.1) 0px 0px 5px;
+    background-color: rgb(226, 226, 226);
+    border: none;
+  }
+  
+.correct {
+  background-color: rgb(60, 189, 0);
+}
+.incorrect {
+  background-color: rgb(215, 0, 0);
+}
+}
