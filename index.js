@@ -104,7 +104,6 @@ const questions = [
     ],
   },
 ];
-
 let currentQuestion;
 let currentQuestionPointer = -1;
 
@@ -142,7 +141,6 @@ function renderQuestion(question) {
 
   document.getElementById("question").appendChild(quizBox);
 }
-
 function nextQuestion() {
   if (currentQuestion) {
     document.getElementById(String(currentQuestion.id)).remove();
@@ -158,7 +156,6 @@ function nextQuestion() {
 
   renderQuestion(currentQuestion);
 }
-
 function validate(antwortId) {
   const correctAntwort = currentQuestion.antworte.find((antwort) => {
     return antwort.correct;
@@ -173,7 +170,6 @@ function validate(antwortId) {
     document.getElementById(correctAntwort.id).classList.add("correct");
   }
 }
-
 function schowSolution() {
   const correctAntwort = currentQuestion.antworte.find((antwort) => {
     return antwort.correct;
